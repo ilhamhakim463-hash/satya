@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Temukan semua koleksi properti premium SATYA'PROPERTY – villa mewah, penthouse eksklusif, dan rumah premium di seluruh Indonesia.">
+  <title>Properti – SATYA'PROPERTY</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!-- Lang Bar -->
+<div class="lang-bar">
+  <div class="lang-bar-inner">
+    <div class="lang-switcher">
+      <button class="lang-btn active" data-lang="id">ID</button>
+      <span class="lang-divider">|</span>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+    <div class="lang-bar-contact">
+      <a href="tel:+6283115680007">📞 +62 831-1568-0007</a>
+      <span class="sep">|</span>
+      <a href="mailto:didikaramoy620@gmail.com">✉ didikaramoy620@gmail.com</a>
+    </div>
+  </div>
+</div>
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="logo">
+      <img src="assets/images/logo.svg" alt="Satya Property Logo" style="width:160px;height:auto;max-height:48px;object-fit:contain;">
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="nav_home">Beranda</a></li>
+      <li><a href="properties.html" class="active" data-i18n="nav_properties">Properti</a></li>
+      <li><a href="about.html" data-i18n="nav_about">Tentang</a></li>
+      <li><a href="articles.html" data-i18n="nav_articles">Artikel</a></li>
+      <li><a href="contact.html" data-i18n="nav_contact">Kontak</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn-nav-outline" data-i18n="nav_cta">Konsultasi Gratis</a>
+      <div class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" id="mobileNavClose">✕</button>
+  <ul class="mobile-nav-links">
+    <li><a href="index.html">Beranda</a></li>
+    <li><a href="properties.html">Properti</a></li>
+    <li><a href="about.html">Tentang Kami</a></li>
+    <li><a href="articles.html">Artikel</a></li>
+    <li><a href="contact.html">Kontak</a></li>
+  </ul>
+</div>
+
+<!-- Page Hero -->
+<div class="page-hero">
+  <div class="container">
+    <div class="page-hero-breadcrumb">
+      <a href="index.html">Beranda</a>
+      <span class="sep">/</span>
+      <span>Properti</span>
+    </div>
+    <div class="section-label">Koleksi Properti</div>
+    <h1 class="page-hero-title">Semua <em>Properti</em></h1>
+    <p class="page-hero-sub">6 properti premium pilihan terbaik di Indonesia</p>
+  </div>
+</div>
+
+<!-- Filter Bar -->
+<div class="filter-bar">
+  <div class="filter-bar-inner">
+    <button class="filter-btn active" onclick="filterProperties('all', this)">Semua</button>
+    <button class="filter-btn" onclick="filterProperties('villa', this)">Villa Mewah</button>
+    <button class="filter-btn" onclick="filterProperties('rumah', this)">Rumah Premium</button>
+    <button class="filter-btn" onclick="filterProperties('penthouse', this)">Penthouse</button>
+    <button class="filter-btn" onclick="filterProperties('townhouse', this)">Townhouse</button>
+    <span class="filter-count" id="filterCount">Menampilkan 6 properti</span>
+  </div>
+</div>
+
+<!-- Properties Grid -->
+<section class="section" style="background:var(--navy);">
+  <div class="container">
+    <div class="properties-grid" id="propertiesGrid">
+
+      <!-- Property 1 -->
+      <div class="property-card fade-in" data-type="villa" onclick="window.location='property-detail.html?id=1'">
+        <div class="property-card-img">
+          <img src="https://images.unsplash.com/photo-1602343168117-bb8ffe3e2e9f?w=900&q=88&fit=crop&auto=format" alt="Villa Kintamani Hills" loading="lazy">
+          <span class="property-badge premium">Unggulan</span>
+        </div>
+        <div class="property-card-body">
+          <div class="property-location">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Kintamani, Bali
+          </div>
+          <h3 class="property-name">Villa Kintamani Hills</h3>
+          <p class="property-type">Villa Mewah dengan Kolam Renang Infinity</p>
+          <div class="property-specs">
+            <div class="spec-item"><div class="spec-val">5</div><div class="spec-label">KT</div></div>
+            <div class="spec-item"><div class="spec-val">4</div><div class="spec-label">KM</div></div>
+            <div class="spec-item"><div class="spec-val">650 m²</div><div class="spec-label">LB</div></div>
+          </div>
+          <div class="property-footer">
+            <div>
+              <div class="property-price">Rp 14,5 M</div>
+              <div class="property-price-label">Harga Jual</div>
+            </div>
+            <a href="property-detail.html?id=1" class="btn-card" onclick="event.stopPropagation()">Detail →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Property 2 -->
+      <div class="property-card fade-in fade-in-delay-1" data-type="rumah" onclick="window.location='property-detail.html?id=2'">
+        <div class="property-card-img">
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=900&q=88&fit=crop&auto=format" alt="Griya Nusantara" loading="lazy">
+          <span class="property-badge">Baru</span>
+        </div>
+        <div class="property-card-body">
+          <div class="property-location">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Pondok Indah, Jakarta Selatan
+          </div>
+          <h3 class="property-name">Griya Nusantara</h3>
+          <p class="property-type">Rumah Cluster Premium</p>
+          <div class="property-specs">
+            <div class="spec-item"><div class="spec-val">4</div><div class="spec-label">KT</div></div>
+            <div class="spec-item"><div class="spec-val">3</div><div class="spec-label">KM</div></div>
+            <div class="spec-item"><div class="spec-val">380 m²</div><div class="spec-label">LB</div></div>
+          </div>
+          <div class="property-footer">
+            <div>
+              <div class="property-price">Rp 8,2 M</div>
+              <div class="property-price-label">Harga Jual</div>
+            </div>
+            <a href="property-detail.html?id=2" class="btn-card" onclick="event.stopPropagation()">Detail →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Property 3 -->
+      <div class="property-card fade-in fade-in-delay-2" data-type="penthouse" onclick="window.location='property-detail.html?id=3'">
+        <div class="property-card-img">
+          <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=900&q=88&fit=crop&auto=format" alt="Skyline Residence" loading="lazy">
+          <span class="property-badge premium">Premium</span>
+        </div>
+        <div class="property-card-body">
+          <div class="property-location">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Menteng, Jakarta Pusat
+          </div>
+          <h3 class="property-name">Skyline Residence</h3>
+          <p class="property-type">Penthouse Eksklusif Lantai 42</p>
+          <div class="property-specs">
+            <div class="spec-item"><div class="spec-val">3</div><div class="spec-label">KT</div></div>
+            <div class="spec-item"><div class="spec-val">3</div><div class="spec-label">KM</div></div>
+            <div class="spec-item"><div class="spec-val">450 m²</div><div class="spec-label">LB</div></div>
+          </div>
+          <div class="property-footer">
+            <div>
+              <div class="property-price">Rp 22 M</div>
+              <div class="property-price-label">Harga Jual</div>
+            </div>
+            <a href="property-detail.html?id=3" class="btn-card" onclick="event.stopPropagation()">Detail →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Property 4 -->
+      <div class="property-card fade-in" data-type="villa" onclick="window.location='property-detail.html?id=4'">
+        <div class="property-card-img">
+          <img src="https://images.unsplash.com/photo-1505873242700-f289a29e1e0f?w=900&q=88&fit=crop&auto=format" alt="Harmoni Seaview" loading="lazy">
+          <span class="property-badge">Hot Offer</span>
+        </div>
+        <div class="property-card-body">
+          <div class="property-location">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Seminyak, Bali
+          </div>
+          <h3 class="property-name">Harmoni Seaview</h3>
+          <p class="property-type">Villa Pantai dengan Akses Private</p>
+          <div class="property-specs">
+            <div class="spec-item"><div class="spec-val">6</div><div class="spec-label">KT</div></div>
+            <div class="spec-item"><div class="spec-val">5</div><div class="spec-label">KM</div></div>
+            <div class="spec-item"><div class="spec-val">780 m²</div><div class="spec-label">LB</div></div>
+          </div>
+          <div class="property-footer">
+            <div>
+              <div class="property-price">Rp 18,5 M</div>
+              <div class="property-price-label">Harga Jual</div>
+            </div>
+            <a href="property-detail.html?id=4" class="btn-card" onclick="event.stopPropagation()">Detail →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Property 5 -->
+      <div class="property-card fade-in fade-in-delay-1" data-type="rumah" onclick="window.location='property-detail.html?id=5'">
+        <div class="property-card-img">
+          <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=900&q=88&fit=crop&auto=format" alt="Royal Highlands" loading="lazy">
+          <span class="property-badge premium">Eksklusif</span>
+        </div>
+        <div class="property-card-body">
+          <div class="property-location">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Citraland, Surabaya
+          </div>
+          <h3 class="property-name">Royal Highlands</h3>
+          <p class="property-type">Rumah Mewah Cluster Gated</p>
+          <div class="property-specs">
+            <div class="spec-item"><div class="spec-val">5</div><div class="spec-label">KT</div></div>
+            <div class="spec-item"><div class="spec-val">4</div><div class="spec-label">KM</div></div>
+            <div class="spec-item"><div class="spec-val">520 m²</div><div class="spec-label">LB</div></div>
+          </div>
+          <div class="property-footer">
+            <div>
+              <div class="property-price">Rp 11,8 M</div>
+              <div class="property-price-label">Harga Jual</div>
+            </div>
+            <a href="property-detail.html?id=5" class="btn-card" onclick="event.stopPropagation()">Detail →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Property 6 -->
+      <div class="property-card fade-in fade-in-delay-2" data-type="townhouse" onclick="window.location='property-detail.html?id=6'">
+        <div class="property-card-img">
+          <img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=900&q=88&fit=crop&auto=format" alt="The Pinnacle" loading="lazy">
+          <span class="property-badge">Investasi</span>
+        </div>
+        <div class="property-card-body">
+          <div class="property-location">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            BSD City, Tangerang
+          </div>
+          <h3 class="property-name">The Pinnacle</h3>
+          <p class="property-type">Townhouse Premium Modern</p>
+          <div class="property-specs">
+            <div class="spec-item"><div class="spec-val">4</div><div class="spec-label">KT</div></div>
+            <div class="spec-item"><div class="spec-val">3</div><div class="spec-label">KM</div></div>
+            <div class="spec-item"><div class="spec-val">290 m²</div><div class="spec-label">LB</div></div>
+          </div>
+          <div class="property-footer">
+            <div>
+              <div class="property-price">Rp 6,5 M</div>
+              <div class="property-price-label">Harga Jual</div>
+            </div>
+            <a href="property-detail.html?id=6" class="btn-card" onclick="event.stopPropagation()">Detail →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-inner fade-in">
+      <h2 class="cta-title">Tidak Menemukan<br><em>yang Anda Cari?</em></h2>
+      <p class="cta-desc">Konsultasikan kebutuhan properti Anda dengan tim ahli kami. Kami akan mencarikan properti yang tepat sesuai kebutuhan dan anggaran Anda.</p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn-gold">Konsultasi Sekarang →</a>
+        <a href="https://wa.me/6283115680007?text=Halo%20Satya'Property%2C%20saya%20ingin%20mencari%20properti%20khusus." target="_blank" class="btn-outline">Chat WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer (abbreviated) -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom" style="padding-top:0;border-top:none;padding:40px 0;">
+      <p class="footer-copy">© 2024 SATYA'PROPERTY. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="index.html">Beranda</a>
+        <a href="about.html">Tentang</a>
+        <a href="contact.html">Kontak</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="wa-float">
+  <a href="https://wa.me/6283115680007?text=Halo%20Satya'Property%2C%20saya%20ingin%20informasi%20properti." target="_blank" class="wa-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  </a>
+</div>
+
+<script src="js/main.js"></script>
+<script>
+function filterProperties(type, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const cards = document.querySelectorAll('#propertiesGrid .property-card');
+  let count = 0;
+  cards.forEach(card => {
+    const show = type === 'all' || card.dataset.type === type;
+    card.style.display = show ? '' : 'none';
+    if (show) count++;
+  });
+  document.getElementById('filterCount').textContent = `Menampilkan ${count} properti`;
+}
+</script>
+</body>
+</html>
